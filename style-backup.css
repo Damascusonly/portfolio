@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .parent-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.parent-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.parent-container::-webkit-scrollbar-thumb {
+  background-color: #00abf0;
+  border-radius: 4px;
+}
+
+.parent-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+  :root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.8rem; /* Adjusted from 2rem */
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  
+  .navbar a {
+    font-size: 1.2rem; /* Adjusted from 1.4rem */
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+  }
+  
+  .navbar a:hover,
+  .navbar a:active {
+    color: var(--main-color);
+  }
+  
+  #menu-icon {
+    font-size: 2.5rem; /* Adjusted from 3rem */
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+  }
+  
+  .main-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20%;
+     /* Adjusted to push contents below the header */
+  }
+  
+  .content-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .for_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.for_me .header_section2,.header_section3{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.allnewlinks{
+  /* border: 3px solid lime; */
+  width: 85%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit ,minmax(200px ,1fr));
+  padding: 20px;
+}
+
+.allnewlinks .imgs{
+  width: 120px;
+  height: 100px;
+  filter:grayscale(100%);
+  margin: auto;
+}
+
+.icon-size{
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  font-size: 80px;
+  text-align: center;
+   cursor: pointer;
+   
+  
+}
+
+.box_icon{
+  width: 200px;
+  height: auto;
+  transition: all ease-in-out 0.5s;
+}
+.box_icon:hover,.box_icon:focus,.box_icon:active{
+transform: scale(1.2);
+}
+  
+  .home-image {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add some styling to the image */
+  }
+  
+  .home-content {
+    max-width: 600px;
+    margin: 20px 0 40px;
+  }
+  
+  .home-content h1 {
+    font-size: 3.2rem; /* Adjusted from 4rem */
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.hire-me {
+  margin: 20px 0;
+}
+
+.hire-me h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hire-me form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hire-me form div {
+  margin-bottom: 10px;
+}
+
+.hire-me form label {
+  font-weight: bold;
+}
+
+.hire-me form input,
+.hire-me form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hire-me form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hire-me form button:hover {
+  background-color: #555;
+}
+  
+  .home-content h3 {
+    font-size: 2rem; /* Adjusted from 2.4rem */
+    font-weight: 700;
+    color: #00abf0;
+  }
+  
+  .home-content p {
+    font-size: 1.2rem; /* Adjusted from 1.4rem */
+  }
+  
+  .aboutme_Message {
+    background-color: var(--second-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .aboutme_Message h1 {
+    font-size: 2.8rem; /* Adjusted from 3.2rem */
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+  
+  .aboutme_Message h3 {
+    font-size: 1.8rem; /* Adjusted from 2rem */
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  
+  .aboutme_Message p {
+    font-size: 1.2rem; /* Adjusted from 1.4rem */
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+  }
+  
+  .btn-box a {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 70%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 1.4rem; /* Adjusted from 1.6rem */
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+  }
+  
+  .btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+  }
+  
+  .btn-box a:nth-child(2):hover {
+    color: #081b29;
+  }
+  
+  .btn-box a:nth-child(2)::before {
+    background: #00abf0;
+  }
+  
+  .btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+  }
+  
+  .btn-box a:hover::before {
+    width: 100%;
+  }
+
+  .hire-me form button {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 70%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hire-me form button:hover {
+    color: #081b29;
+}
+
+.hire-me form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.hire-me form button:hover::before {
+    width: 100%;
+}
+
+  .home-sci {
+    width: 170px;
+    margin-top: 20px; /* Adjusted to prevent overlap */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .home-sci a {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 1.4rem; /* Adjusted from 1.6rem */
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+  }
+  
+  .home-sci a:hover {
+    color: #081b29;
+  }
+  
+  .home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+  }
+  
+  .home-sci a:hover::before {
+    width: 100%;
+  }
+  
+  .main-image {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
